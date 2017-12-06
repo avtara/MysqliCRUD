@@ -25,7 +25,8 @@
 				<th>No</th>			
 				<th>Email</th>			
 				<th>Password</th>			
-				<th>Aksi</th>			
+				<th>Aksi</th>
+				<th>Update</th>			
 			</tr>
 	<?php
 		$nomor = 1;
@@ -36,6 +37,7 @@
 				<td><?php echo $row["email"]; ?></td>
 				<td><?php echo $row["password"]; ?></td>
 				<td><a href="http://localhost/mj/instagar.php?email=<?php echo $row['email']; ?>">Hapus</a></td>
+				<td><a href="http://localhost/mj/form_update.php?email=<?php echo $row['email']; ?>">update</a></td>
 			</tr>
 	<?php
 		}
